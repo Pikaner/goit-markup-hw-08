@@ -106,6 +106,7 @@ img {
 .header-list-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .header-link {
   display: block;
   padding-top: 32px;
@@ -121,7 +122,9 @@ img {
 .header-link:focus {
   color: var(--accent-text-color);
 }
-
+.curent {
+  color: var(--accent-text-color);
+}
 /* Хедер контакти */
 .header-group {
   margin-left: auto;
@@ -397,6 +400,7 @@ img {
   left: 215px;
   top: 696px;
   background: #ffffff;
+  border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 .info {
