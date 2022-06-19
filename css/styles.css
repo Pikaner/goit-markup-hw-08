@@ -197,7 +197,8 @@ img {
   display: flex;
 }
 .benefits {
-  padding: 94px;
+  padding-top: 94px;
+  margin-bottom: 94px;
 }
 .benefits-list-item {
   width: 270px;
@@ -207,6 +208,7 @@ img {
 }
 
 .benefits-title {
+  margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
