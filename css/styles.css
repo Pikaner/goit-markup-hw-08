@@ -31,7 +31,6 @@ body {
   font-family: var(--main-font), var(--secondary-font);
   font-size: 14px;
   line-height: 1.71;
-  background-color: var(--background-site-color);
   color: var(--site-text-color);
 }
 
@@ -208,7 +207,6 @@ img {
 }
 
 .benefits-title {
-  margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -217,15 +215,20 @@ img {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-
+.text {
+  margin: 0;
+  letter-spacing: 0.03em;
+}
 /* список послуг */
+.services {
+  padding-bottom: 94px;
+}
 .servise-title {
   margin-bottom: 50px;
 }
 
 .services-list {
   display: flex;
-  margin-bottom: 94px;
 }
 .servise-list-item:not(:last-child) {
   margin-right: 30px;
@@ -236,14 +239,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
   box-sizing: border-box;
-  border: 1px solid;
 
-  border-image-source: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    linear-gradient(0deg, #000000, #000000);
   background: var(--background-team-color);
 }
 
@@ -272,8 +268,8 @@ img {
 }
 
 .title-team {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -348,14 +344,14 @@ img {
 
 /* Портфоліо */
 /* Кнопки */
-.pf-container {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.selection {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .pf-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .btn-list-item:not(:last-child) {
   margin-right: 8px;
@@ -388,6 +384,7 @@ img {
 }
 
 /* Головна портфоліо */
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -398,9 +395,6 @@ img {
 }
 .portfolio-list-item {
   width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 696px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
