@@ -30,7 +30,7 @@
         <nav class="header-nav">
           <ul class="header-list list">
             <li class="header-list-item">
-              <a href="./index.html" class="header-link curent link">Студия</a>
+              <a href="./index.html" class="header-curent link">Студия</a>
             </li>
             <li class="header-list-item">
               <a href="./portfolio.html" class="header-link link">Портфолио</a>
@@ -47,7 +47,7 @@
               <a
                 href="mailto:info@devstudio.com"
                 class="header-contact-link link"
-                >
+              >
                 <svg class="header-icon" width="16" height="12">
                   <use href="./images/icons.svg.svg#icon-envelope"></use>
                 </svg>
@@ -55,12 +55,11 @@
               >
             </li>
             <li class="contact-list-item">
-              <a href="tel:+380961111111" class="header-contact-link link"
-                >
+              <a href="tel:+380961111111" class="header-contact-link link">
                 <svg class="header-icon" width="10" height="16">
                   <use href="./images/icons.svg.svg#icon-smartphone"></use>
                 </svg>
-                
+
                 +38 096 111 11 11</a
               >
             </li>
@@ -74,7 +73,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -82,7 +83,7 @@
       <section class="benefits">
         <div class="container benefits-container">
           <ul class="benefits-list list">
-            <li class="benefits-list-item ">
+            <li class="benefits-list-item">
               <div class="box-icon">
                 <svg class="benefits-icon" width="70" height="70">
                   <use href="./images/icons.svg.svg#icon-antenna-1"></use>
@@ -94,7 +95,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="benefits-list-item ">
+            <li class="benefits-list-item">
               <div class="box-icon">
                 <svg class="benefits-icon" width="70" height="70">
                   <use href="./images/icons.svg.svg#icon-clock-1"></use>
@@ -106,7 +107,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits-list-item ">
+            <li class="benefits-list-item">
               <div class="box-icon">
                 <svg class="benefits-icon" width="70" height="70">
                   <use href="./images/icons.svg.svg#icon-diagram-1"></use>
@@ -145,6 +146,9 @@
                 width="370"
                 height="294"
               />
+              <div class="services-box">
+                <p class="services-txt">Десктопные приложения</p>
+              </div>
             </li>
             <li class="servise-list-item">
               <img
@@ -153,6 +157,9 @@
                 width="370"
                 height="294"
               />
+              <div class="services-box">
+                <p class="services-txt">Мобильные приложения</p>
+              </div>
             </li>
             <li class="servise-list-item">
               <img
@@ -161,6 +168,9 @@
                 width="370"
                 height="294"
               />
+              <div class="services-box">
+                <p class="services-txt">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -191,7 +201,11 @@
                     rel="noopener noreferrer"
                     aria-label="instatgram"
                   >
-                    <svg class="team-icon instatgram" width="20px" height="20px">
+                    <svg
+                      class="team-icon instatgram"
+                      width="20px"
+                      height="20px"
+                    >
                       <use href="./images/icons.svg.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -237,8 +251,7 @@
                 </li>
               </ul>
             </li>
-          
-          
+
             <li class="team-list-item">
               <img
                 src="./images/img5.jpg"
@@ -259,7 +272,11 @@
                     rel="noopener noreferrer"
                     aria-label="instatgram"
                   >
-                    <svg class="team-icon instatgram" width="20px" height="20px">
+                    <svg
+                      class="team-icon instatgram"
+                      width="20px"
+                      height="20px"
+                    >
                       <use href="./images/icons.svg.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -325,7 +342,11 @@
                     rel="noopener noreferrer"
                     aria-label="instatgram"
                   >
-                    <svg class="team-icon instatgram" width="20px" height="20px">
+                    <svg
+                      class="team-icon instatgram"
+                      width="20px"
+                      height="20px"
+                    >
                       <use href="./images/icons.svg.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -391,7 +412,11 @@
                     rel="noopener noreferrer"
                     aria-label="instatgram"
                   >
-                    <svg class="team-icon instatgram" width="20px" height="20px">
+                    <svg
+                      class="team-icon instatgram"
+                      width="20px"
+                      height="20px"
+                    >
                       <use href="./images/icons.svg.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -448,7 +473,7 @@
         <ul class="list clients-box">
           <li class="clients-item">
             <a href="" class="link clients-link"
-              ><svg class="icon-client" >
+              ><svg class="icon-client">
                 <use href="./images/icons.svg.svg#icon-Logo1"></use></svg
             ></a>
           </li>
@@ -460,25 +485,25 @@
           </li>
           <li class="clients-item">
             <a href="" class="link clients-link"
-              ><svg class="icon-client" >
+              ><svg class="icon-client">
                 <use href="./images/icons.svg.svg#icon-Logo3"></use></svg
             ></a>
           </li>
           <li class="clients-item">
             <a href="" class="link clients-link"
-              ><svg class="icon-client" >
+              ><svg class="icon-client">
                 <use href="./images/icons.svg.svg#icon-Logo4"></use></svg
             ></a>
           </li>
           <li class="clients-item">
             <a href="" class="link clients-link"
-              ><svg class="icon-client" >
+              ><svg class="icon-client">
                 <use href="./images/icons.svg.svg#icon-Logo5"></use></svg
             ></a>
           </li>
           <li class="clients-item">
             <a href="" class="link clients-link"
-              ><svg class="icon-client" >
+              ><svg class="icon-client">
                 <use href="./images/icons.svg.svg#icon-Logo6"></use></svg
             ></a>
           </li>
@@ -489,69 +514,97 @@
     <footer class="footer">
       <div class="footer-container container">
         <div class="contact-list">
-        <a href="" class="logo-footer link"
-          >Web<span class="logo-studio-footer">Studio</span></a
-        >
-        <address>
-          <ul class="footer-list list">
-            <li class="address-footer">
-              <a
-                href="https://goo.gl/maps/1if2pYAQGMotuE8F6"
-                class="footer-address-link link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                г. Киев, пр-т Леси Украинки, 26
-              </a>
-            </li>
-            <li class="contact-footer">
-              <a href="mailto:info@example.com" class="footer-contact-link link"
-                >info@example.com</a
-              >
-            </li>
-            <li class="contact-footer">
-              <a href="tel:+380991111111" class="footer-contact-link link"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
+          <a href="" class="logo-footer link"
+            >Web<span class="logo-studio-footer">Studio</span></a
+          >
+          <address>
+            <ul class="footer-list list">
+              <li class="address-footer">
+                <a
+                  href="https://goo.gl/maps/1if2pYAQGMotuE8F6"
+                  class="footer-address-link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="contact-footer">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-contact-link link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contact-footer">
+                <a href="tel:+380991111111" class="footer-contact-link link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
         <div class="join-list">
           <p class="join">присоединяйтесь</p>
           <ul class="list footer-box-list">
             <li class="footer-box-item">
-              <a class="link footer-box-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                class="link footer-box-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-box-item">
-              <a class="link footer-box-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+              <a
+                class="link footer-box-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-box-item">
-              <a class="link footer-box-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              <a
+                class="link footer-box-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-box-item">
-              <a class="link footer-box-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              <a
+                class="link footer-box-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><svg class="icon" width="20" height="20">
                   <use href="./images/icons.svg.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
-          
         </div>
-        </div>
-    
+      </div>
     </footer>
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-button" data-modal-close>
+          <svg class="icon" width="18px" height="18px">
+            <use href="./images/HW04/close.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
