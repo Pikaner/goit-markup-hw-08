@@ -796,6 +796,7 @@ img {
   border-radius: 50%;
   background-color: var(--backgroud-header-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .icon-close {
@@ -828,11 +829,12 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .form-label {
   position: absolute;
   transform: translateY(-120%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
@@ -872,16 +874,25 @@ img {
 .form-field:focus-within > .label-icon {
   fill: var(--accent-text-color);
 }
+.form-field-comment {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 .comment {
   resize: none;
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 20px;
   padding: 12px 16px;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
 }
 .comment:focus {
   outline: 0;
@@ -890,7 +901,6 @@ img {
 }
 .agreement-txt {
   letter-spacing: 0.03em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .agreement-link {
   border-bottom: 1px solid var(--accent-text-color);
@@ -924,6 +934,10 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.checkbox:checked ~ .agreement-txt {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .form-button {
   display: inline-block;
   width: 200px;
