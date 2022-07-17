@@ -1,0 +1,40 @@
+.btn__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 73px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+    padding: 6px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    color: $link-text-color;
+    background: $background-btn-color;
+
+    transition-property: background-color, color;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    background-color: $accent-text-color;
+    color: $hero-title-text-color;
+}
+}
