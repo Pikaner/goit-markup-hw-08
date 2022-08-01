@@ -1,14 +1,19 @@
 .join {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
-    padding-right: 93px;
-    padding-top: 15px;
+    align-items: center;
+    margin-bottom: 60px;
+    
+@media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        margin-bottom: 0;
+        margin-right: 93px;
+    }
+
 }
 
 .join__tittle {
     margin-bottom: 20px;
-
     color: $hero-title-text-color;
     font-weight: 700;
     font-size: 14px;

@@ -1,13 +1,29 @@
 .contact {
+    display: flex;
     margin-left: auto;
+    @media screen and (max-width: 767px) {
+            display: none;
+        }      
 }
 
+
 .contact__list {
-    display: flex;
+    @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+        }
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                }
 }
 
 .contact__item:not(:last-child) {
-    margin-right: 50px;
+@media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+        }
 }
 
 .contact__link {

@@ -1,5 +1,9 @@
 .services {
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
     padding-bottom: 94px;
+
 }
 
 .servise__title {
@@ -8,6 +12,7 @@
 
 .services__list {
     display: flex;
+    justify-content: center;
 }
 
 .servise__item:not(:last-child) {

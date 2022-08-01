@@ -24,10 +24,30 @@
     <!--Секція хедер-->
     <header class="header">
       <div class="container header__container">
-        <a href="" class="header__web link"
-          >Web<span class="header__studio">Studio</span></a
+        <div class="header__logo">
+          <a href="" class="header__web link"
+            >Web<span class="header__studio">Studio</span></a
+          >
+        </div>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu__mobile"
+          data-menu-button
         >
-        <nav>
+          <svg width="40" height="40" aria-label="Переключатель меню">
+            <use
+              class="icon-menu"
+              href="./images/HW04/symbol-defs2.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./images/HW04/symbol-defs2.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
+        <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link link">Студия</a>
@@ -67,7 +87,7 @@
     <!--Головна-->
     <main>
       <section class="portfolio">
-        <div class="pf-container container">
+        <div class="container">
           <!-- Кнопки -->
           <ul class="btn__list list">
             <li class="btn__item">
@@ -86,16 +106,28 @@
               <button href="" class="btn">Маркетинг</button>
             </li>
           </ul>
-          <!-- Портфоліо -->
+        </div>
+        <!-- Портфоліо -->
+        <div class="container">
           <ul class="portfolio__list list">
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img8.jpg"
-                  alt="Технокряк"
-                  width="370"
-                  height="294"
+               <picture>
+                <source srcset="./images/mob/mob-pf1.jpg 1x, ./images/mob/mob-pf1@2x.jpg 2x" 
+                media="(max-width:767px)"
                 />
+                <source srcset="./images/tab/tab-pf1.jpg 1x, ./images/tab/tab-pf1@2x.jpg 2x" 
+                media="(max-width:1199px)"
+                />
+                <source srcset="./images/pf1.jpg 1x, ./images/pf1@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                />
+                <img
+                src="./images/pf1.jpg"
+                alt="Технокряк"
+                width="450"
+              />
+               </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -111,12 +143,22 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img9.jpg"
-                  alt="Дизайн постера"
-                  width="370"
-                  height="294"
+               <picture>
+                <source srcset="./images/mob/mob-pf2.jpg 1x, ./images/mob/mob-pf2@2x.jpg 2x" 
+                media="(max-width:767px)"
                 />
+                <source srcset="./images/tab/tab-pf2.jpg 1x, ./images/tab/tab-pf2@2x.jpg 2x" 
+                media="(max-width:1199px)"
+                />
+                <source srcset="./images/pf2.jpg 1x, ./images/pf2@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                />
+                <img
+                src="./images/pf2.jpg"
+                alt="Дизайн постера"
+                width="450"
+              />
+               </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -134,12 +176,22 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img10.jpg"
-                  alt="Приложение для ресторана"
-                  width="370"
-                  height="294"
+               <picture>
+                <source srcset="./images/mob/mob-pf3.jpg 1x, ./images/mob/mob-pf3@2x.jpg 2x" 
+                media="(max-width:767px)"
                 />
+                <source srcset="./images/tab/tab-pf3.jpg 1x, ./images/tab/tab-pf3@2x.jpg 2x" 
+                media="(max-width:1199px)"
+                />
+                <source srcset="./images/pf3.jpg 1x, ./images/pf3@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                />
+                <img
+                src="./images/pf3.jpg"
+                alt="Приложение для ресторана"
+                width="450"
+              />
+               </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -158,12 +210,21 @@
 
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img11.jpg"
+                <picture> <source srcset="./images/mob/mob-pf4.jpg 1x, ./images/mob/mob-pf4@2x.jpg 2x" 
+                  media="(max-width:767px)"
+                  />
+                  <source srcset="./images/tab/tab-pf4.jpg 1x, ./images/tab/tab-pf4@2x.jpg 2x" 
+                  media="(max-width:1199px)"
+                  />
+                  <source srcset="./images/pf4.jpg 1x, ./images/pf4@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <img
+                  src="./images/pf4.jpg"
                   alt="Проект по маркетингу"
-                  width="370"
-                  height="294"
+                  width="450"
                 />
+                </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -179,12 +240,22 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img12.jpg"
-                  alt="Приложение"
-                  width="370"
-                  height="294"
+               <picture>
+                <source srcset="./images/mob/mob-pf5.jpg 1x, ./images/mob/mob-pf5@2x.jpg 2x" 
+                media="(max-width:767px)"
                 />
+                <source srcset="./images/tab/tab-pf5.jpg 1x, ./images/tab/tab-pf5@2x.jpg 2x" 
+                media="(max-width:1199px)"
+                />
+                <source srcset="./images/pf5.jpg 1x, ./images/pf5@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                />
+                <img
+                src="./images/pf5.jpg"
+                alt="Приложение"
+                width="450"
+              />
+               </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -200,12 +271,22 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img13.jpg"
+                <picture>
+                  <source srcset="./images/mob/mob-pf6.jpg 1x, ./images/mob/mob-pf6@2x.jpg 2x" 
+                  media="(max-width:767px)"
+                  />
+                  <source srcset="./images/tab/tab-pf6.jpg 1x, ./images/tab/tab-pf6@2x.jpg 2x" 
+                  media="(max-width:1199px)"
+                  />
+                  <source srcset="./images/pf6.jpg 1x, ./images/pf6@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <img
+                  src="./images/pf6.jpg"
                   alt="Веб-сайт"
-                  width="370"
-                  height="294"
+                  width="450"
                 />
+                </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -223,12 +304,22 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img14.jpg"
-                  alt="Дизайн издания"
-                  width="370"
-                  height="294"
+               <picture>
+                <source srcset="./images/mob/mob-pf7.jpg 1x, ./images/mob/mob-pf7@2x.jpg 2x" 
+                media="(max-width:767px)"
                 />
+                <source srcset="./images/tab/tab-pf7.jpg 1x, ./images/tab/tab-pf7@2x.jpg 2x" 
+                media="(max-width:1199px)"
+                />
+                <source srcset="./images/pf7.jpg 1x, ./images/pf7@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                />
+                <img
+                src="./images/pf7.jpg"
+                alt="Дизайн издания"
+                width="450"
+              />
+               </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -246,12 +337,22 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img15.jpg"
-                  alt="Проект маркетинга"
-                  width="370"
-                  height="294"
+               <picture>
+                <source srcset="./images/mob/mob-pf8.jpg 1x, ./images/mob/mob-pf8@2x.jpg 2x" 
+                media="(max-width:767px)"
                 />
+                <source srcset="./images/tab/tab-pf8.jpg 1x, ./images/tab/tab-pf8@2x.jpg 2x" 
+                media="(max-width:1199px)"
+                />
+                <source srcset="./images/pf8.jpg 1x, ./images/pf8@2x.jpg 2x" 
+                media="(min-width:1200px)"
+                />
+                <img
+                src="./images/pf8.jpg"
+                alt="Проект маркетинга"
+                width="450"
+              />
+               </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -267,12 +368,22 @@
             </li>
             <li class="portfolio__item">
               <div class="portfolio__thumb">
-                <img
-                  src="./images/portfolio/img16.jpg"
+                <picture>
+                  <source srcset="./images/mob/mob-pf9.jpg 1x, ./images/mob/mob-pf9@2x.jpg 2x" 
+                  media="(max-width:767px)"
+                  />
+                  <source srcset="./images/tab/tab-pf9.jpg 1x, ./images/tab/tab-pf9@2x.jpg 2x" 
+                  media="(max-width:1199px)"
+                  />
+                  <source srcset="./images/pf9.jpg 1x, ./images/pf9@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <img
+                  src="./images/pf9.jpg"
                   alt="Приложение"
-                  width="370"
-                  height="294"
+                  width="450"
                 />
+                </picture>
                 <div class="thumb__box">
                   <p class="thumb__txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -293,7 +404,7 @@
     <!--Підвал сайту-->
     <footer class="footer">
       <div class="footer__container container">
-        <div>
+        <div class="footer__box">
           <a href="" class="logo__footer link"
             >Web<span class="studio__footer">Studio</span></a
           >
@@ -375,24 +486,101 @@
         </div>
         <div class="signup">
           <p class="signup__p">подпишитесь на рассылку</p>
-          <form name="signup" autocomplete="on">
-            <label>
-              <input
-                class="signup__input"
-                type="text"
-                name="user-mail"
-                placeholder="E-mail"
-              />
-            </label>
+          <div class="signup__box">
+            <input
+              class="signup__input"
+              type="text"
+              name="user-mail"
+              placeholder="E-mail"
+            />
+
             <button class="button signup__bt" type="submit">
               Подписаться
               <svg class="icon signup__icon" width="24px" height="24px">
                 <use href="./images/HW04/symbol-defs2.svg#icon-icon-send"></use>
               </svg>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- Мобільне меню -->
+    <div class="menu__mobile" id="menu__mobile" data-menu>
+      <ul class="menu-nav__list list">
+        <li class="menu-nav__item">
+          <a href="./index.html" class="menu-nav__link link">Студия</a>
+        </li>
+        <li class="menu-nav__item">
+          <a
+            href="./portfolio.html"
+            class="menu-nav__link menu-nav__curent link"
+            >Портфолио</a
+          >
+        </li>
+        <li class="menu-nav__item">
+          <a href="" class="menu-nav__link link">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="menu-contact__list list">
+        <li class="menu-contact__item">
+          <a
+            href="tel:+380961111111"
+            class="menu-contact__link menu-contact__curent link"
+          >
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="menu-contact__item">
+          <a href="mailto:info@devstudio.com" class="menu-contact__link link">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="menu-networks__list list">
+        <li class="menu-networks__item">
+          <a
+            class="menu-networks__link link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+        </li>
+        <li class="menu-networks__item">
+          <a
+            class="menu-networks__link link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+        </li>
+        <li class="menu-networks__item">
+          <a
+            class="menu-networks__link link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+        </li>
+        <li class="menu-networks__item">
+          <a
+            class="menu-networks__link link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

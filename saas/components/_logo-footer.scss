@@ -11,3 +11,11 @@
 .logo__footer .studio__footer {
     color: $studiologo-footer-text-color;
 }
+
+.header__logo {
+    @media screen and (max-width: 768px) {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+}

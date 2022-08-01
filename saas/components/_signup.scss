@@ -1,6 +1,4 @@
-.signup {
-    padding-top: 15px;
-}
+
 
 .signup__p {
     font-weight: 700;
@@ -10,27 +8,60 @@
     text-transform: uppercase;
     color: $footer-address-text-color;
     margin-bottom: 20px;
-}
 
+    display: flex;
+    
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+        }
+                 @media screen and (max-width: 1199px) {
+                     justify-content: center;
+                 }
+}
+.signup__box {
+    display: flex;
+        flex-direction: column;
+    
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        }
+}
 .signup__input {
+   
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     outline: 0;
-    width: 358px;
+    
     height: 50px;
     font-size: 16px;
     line-height: 1.25;
     align-items: center;
     letter-spacing: 0.03em;
     padding-left: 16px;
-    margin-right: 12px;
-
     color: rgba(255, 255, 255, 0.6);
     background: #2f303a;
+
+  
+@media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+}
+
+
 }
 
 .signup__bt {
+    margin-left: auto;
+    margin-right: auto;
     display: inline-flex;
     align-items: center;
     justify-content: center;

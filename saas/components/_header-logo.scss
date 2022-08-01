@@ -1,3 +1,11 @@
+
+.header__logo {
+    margin-right: 88px;
+@media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    }
+}
+
 .header__web {
     font-family: Raleway;
     font-weight: 700;
@@ -5,7 +13,6 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: $weblogo-text-color;
-    margin-right: 93px;
 }
 
 .header__studio {

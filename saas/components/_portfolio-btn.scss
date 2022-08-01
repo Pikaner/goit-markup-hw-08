@@ -2,10 +2,25 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    @media screen and (max-width: 767px) {
+           display: flex;
+            flex-wrap: wrap;
+        justify-content: flex-start;
+margin-bottom: 25px;
+        }
+@media screen and (max-width: 1199px) {   
+    margin-bottom: 30px;
+}
 }
 
 .btn__item:not(:last-child) {
     margin-right: 8px;
+}
+
+.btn__item {
+    @media screen and (max-width: 767px) {
+            
+                margin-top: 15px; }
 }
 
 .btn {
@@ -25,9 +40,7 @@
     cursor: pointer;
     color: $link-text-color;
     background: $background-btn-color;
-
     transition-property: background-color, color;
-
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
