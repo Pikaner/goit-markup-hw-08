@@ -1,12 +1,21 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     box-sizing: border-box;
     background: $background-team-color;
+
+    @media screen and (min-width: 1200px) {
+   
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 }
 
 .team__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .team__list {
